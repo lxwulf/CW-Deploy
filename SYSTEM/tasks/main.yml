@@ -1,0 +1,17 @@
+---
+# tasks file for SYSTEM
+
+- name: upgrade repositorys and system of host
+  dnf:
+    name: "*"
+    state: latest
+  become: yes
+
+- name: remove deprecated packages
+  dnf:
+    name: python-unversioned-command
+    state: absent
+  become: yes
+
+- name: import task
+  import_tasks: configfw.yml

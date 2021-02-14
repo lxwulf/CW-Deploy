@@ -1,0 +1,9 @@
+## Lab Environment for NXTENV2
+
+[dev_nxtenv2]
+nxtenv2-01 ansible_host=192.168.2.100
+nxtenv2_02 ansible_host=192.168.2.101
+nxtenv2_03 ansible_host=192.168.2.102
+
+[ALL:children]
+dev_nxtenv2
