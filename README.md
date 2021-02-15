@@ -42,8 +42,12 @@ As frontend [Apache](https://apache.org/) is needed and as backend [Nginx](https
 | To-Do                                    | Achieved |
 |------------------------------------------|:--------:|
 | Automatic system updates                 | ✅       |
+| Deactivate unused Services (ex. IPv6)    | ❌       |
+| Configure the Firewall and Ports         | ❌       |
 | Autoremove deprecated packages           | ❌       |
 | Installing Apache                        | ❌       |
+| Installing Nginx                         | ❌       |
+| Installing Nextcloud                     | ❌       |
 | Configure Apache for Nextcloud (LOCAL)   | ❌       |
 | Configure Apache for Nextcloud (EXTERN)  | ❌       |
 | Configure Apache and Nextcloud for SSL   | ❌       |
@@ -52,6 +56,6 @@ As frontend [Apache](https://apache.org/) is needed and as backend [Nginx](https
 
 ---
 
-> *This does not indicate the order in which it is done.*
+> *This does not indicate the order in which it is done.This would be updated continuously*
 
 ---
