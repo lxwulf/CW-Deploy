@@ -42,7 +42,7 @@ As frontend [Apache](https://apache.org/) is needed and as backend [Nginx](https
 | To-Do                                    | Achieved |
 |------------------------------------------|:--------:|
 | Automatic system updates                 | ✅       |
-| Deactivate unused Services (ex. IPv6)    | ❌       |
+| Deactivate unused Services (ex. IPv6)    | ✅       |
 | Configure the Firewall and Ports         | ❌       |
 | Autoremove deprecated packages           | ❌       |
 | Installing Apache                        | ❌       |
