@@ -59,6 +59,8 @@ This is also the right order in which way they are replayed. All other folders o
 
 ---
 
+<div id='rolefolders'/>
+
 #### **Role Folders**
 
 In every role folder, they have the same folder structure, as example here I took the ``CONFIG`` folder.
@@ -75,6 +77,8 @@ In every role folder, they have the same folder structure, as example here I too
  ┗ 📂vars\
  ┃ ┗ 📜main.yml
 
+<div id='varsfolder'/>
+
 #### **Variable Folders**
 
 This are the ``var`` folders/files in every role folder. Again its the same for every role folder.
@@ -90,6 +94,8 @@ This are the ``var`` folders/files in every role folder. Again its the same for 
  ┃ ┗ 📜main.yml
 
 ---
+
+<div id='miscfolders'/>
 
 #### **Miscellaneous Folders**
 
