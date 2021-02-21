@@ -95,7 +95,7 @@ This are the ``var`` folders/files in every role folder. Again its the same for 
 
 Additionally there is a plugin folder. In this folder I put the mitogen plugin. You can simply download this unzip and put it in the plugin folder. In the ansible.cfg this must be defined, where the plugin is and also that this should be used.
 
-📦PLUGINS
+📦PLUGINS\
  ┣ 📂mitogen-0.2.9
 
 > Keep in mind that your version can be different to mine.
