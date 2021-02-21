@@ -1,0 +1,5 @@
+---
+
+ansible_user: officerk
+ansible_ssh_pass: officerk2049
+ansible_become_password: officerk2049

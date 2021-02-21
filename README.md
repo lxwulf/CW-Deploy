@@ -1,30 +1,34 @@
 # CW-Deploy
 
-## Table of Contents
+## Table of Contents 2
 
 1. [Introduction](#introduction)
 2. [Structure](#structure)
-    1. [Summary](#summary)
-3. [Roadmap](#roadmap)
+    1. [Structure Summary System Build](#summarysystembuild)
+    1. [Structure Directory Tree](#directorytree)
+        1. [Role Folders](#rolefolders)
+        1. [Variable Folders](#varsfolders)
+        1. [Miscellaneous Folders](#miscfolders)
+1. [Roadmap](#roadmap)
 
 <div id='introduction'/>
 
-### What's the idea of this project? 💡
+### **What's the idea of this project?** 💡
 
-Set up and configure cloud instances automatically. This is powered by the automation tool Ansible which is co-developed by Red Hat among many other free developers.
+Set up and configure cloud instances automatically. This is powered by the automation tool Ansible which is co-developed by Red Hat among many other free developers. CW-Deploy works only on linux and is and was tested with Fedora (33) Server.
 
-The repository is available on GitHub --> [Ansible](https://github.com/ansible/ansible)
+The repository of ansible is available on GitHub --> [Ansible](https://github.com/ansible/ansible)
 
 ---
 <div id='structure'/>
 
-### Structure 🏗️
+### **Structure** 🏗️
 
 As frontend [Apache](https://apache.org/) is needed and as backend [Nginx](https://nginx.org/en/) as proxy. So we have the best performance on the dashboard and also in the backend with the data processing which Nginx does. As cloud engine we use [Nextcloud](https://nextcloud.com/) which is also free and open source.
 
-<div id='summary'/>
+<div id='summarysystembuild'/>
 
-#### Summary ✍️
+#### **Structure Summary System Build** ✍️
 
 - Frontend 🖥️
   - Apache
@@ -33,17 +37,79 @@ As frontend [Apache](https://apache.org/) is needed and as backend [Nginx](https
 - Cloudengine 🌩️
   - Nextcloud
 
+<div id='directorytree'/>
+
+#### **Structure Directory Tree** ✍️
+
+The following directories are roles folders:
+
+1. SYSTEM
+1. CW-INSTALL
+1. CONFIG
+
+This is also the right order in which way they are replayed. All other folders or files are special config files.
+
+| File/Folder                | Description                                                                                         |
+|----------------------------|-----------------------------------------------------------------------------------------------------|
+| ``ansible.cfg``            | Ansible's configuration file, we are defining here where the host file is or the plugin to load.    |
+| ``cw-deploy-playbook.yml`` | Its the playbook file of this Project.\ Here we are defining which roles in which way are *played*. |
+| ``.gitignore``             | Definition file from git to ignore files or folders who don't get pushed to the repository          |
+| ``hosts``                  | Host file where you remote servers/hosts are defined                                                |
+| ``README.md``              | That which you actually read                                                                        |
+
+---
+
+#### **Role Folders**
+
+In every role folder, they have the same folder structure, as example here I took the ``CONFIG`` folder.
+
+📦CONFIG\
+ ┣ 📂defaults\
+ ┃ ┗ 📜main.yml\
+ ┣ 📂files\
+ ┣ 📂handlers\
+ ┃ ┗ 📜main.yml\
+ ┣ 📂tasks\
+ ┃ ┗ 📜main.yml\
+ ┣ 📂templates
+ ┗ 📂vars\
+ ┃ ┗ 📜main.yml
+
+#### **Variable Folders**
+
+This are the ``var`` folders/files in every role folder. Again its the same for every role folder.
+
+---
+
+┣ 📂defaults\
+ ┃ ┗ 📜main.yml\
+
+---
+
+┗ 📂vars\
+ ┃ ┗ 📜main.yml
+
+---
+
+#### **Miscellaneous Folders**
+
+Additionally there is a plugin folder. In this folder I put the mitogen plugin. You can simply download this unzip and put it in the plugin folder. In the ansible.cfg this must be defined, where the plugin is and also that this should be used.
+
+📦PLUGINS
+ ┣ 📂mitogen-0.2.9
+
+> Keep in mind that your version can be different to mine.
+
 ---
 
 <div id='roadmap'/>
 
-### Roadmap 🛣️
+### **Roadmap** 🛣️
 
 | To-Do                                    | Achieved |
 |------------------------------------------|:--------:|
 | Automatic system updates                 | ✅       |
 | Deactivate unused Services (ex. IPv6)    | ✅       |
-| Configure the Firewall and Ports         | ❌       |
 | Autoremove deprecated packages           | ❌       |
 | Installing Apache                        | ❌       |
 | Installing Nginx                         | ❌       |
