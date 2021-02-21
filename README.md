@@ -55,7 +55,7 @@ This is also the right order in which way they are replayed. All other folders o
 | ``cw-deploy-playbook.yml`` | Its the playbook file of this Project.\ Here we are defining which roles in which way are *played*. |
 | ``.gitignore``             | Definition file from git to ignore files or folders who don't get pushed to the repository          |
 | ``hosts``                  | Host file where you remote servers/hosts are defined                                                |
-| ``README.md``              | That which you actually read                                                                        |
+| ``README.md``              | That file which you actually read                                                                   |
 
 ---
 
