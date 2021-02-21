@@ -81,7 +81,7 @@ In every role folder, they have the same folder structure, as example here I too
 
 #### **Variable Folders**
 
-This are the ``var`` folders/files in every role folder. Again its the same for every role folder.
+This are the ``var`` folders/files in every role folder.
 
 ---
 
