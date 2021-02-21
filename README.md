@@ -3,7 +3,7 @@
 ## Table of Contents 2
 
 1. [Introduction](#introduction)
-2. [Structure](#structure)
+1. [Structure](#structure)
     1. [Structure Summary System Build](#summarysystembuild)
     1. [Structure Directory Tree](#directorytree)
         1. [Role Folders](#rolefolders)
