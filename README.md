@@ -1,6 +1,6 @@
 # CW-Deploy
 
-## Table of Contents 2
+## Table of Contents
 
 1. [Introduction](#introduction)
 1. [Structure](#structure)
@@ -15,7 +15,7 @@
 
 ### **What's the idea of this project?** 💡
 
-Set up and configure cloud instances automatically. This is powered by the automation tool Ansible which is co-developed by Red Hat among many other free developers. CW-Deploy works only on linux and is and was tested with Fedora (33) Server.
+Set up and configure cloud instances automatically. This is powered by the automation tool Ansible which is co-developed by Red Hat among many other free developers. CW-Deploy works only on linux and is was tested with Fedora Server (33).
 
 The repository of ansible is available on GitHub --> [Ansible](https://github.com/ansible/ansible)
 
@@ -73,7 +73,7 @@ In every role folder, they have the same folder structure, as example here I too
  ┃ ┗ 📜main.yml\
  ┣ 📂tasks\
  ┃ ┗ 📜main.yml\
- ┣ 📂templates
+ ┣ 📂templates\
  ┗ 📂vars\
  ┃ ┗ 📜main.yml
 
@@ -86,7 +86,7 @@ This are the ``var`` folders/files in every role folder.
 ---
 
 ┣ 📂defaults\
- ┃ ┗ 📜main.yml\
+ ┃ ┗ 📜main.yml
 
 ---
 
