@@ -1,0 +1,9 @@
+---
+
+# importing tasks
+
+- name: import task
+  import_tasks: '{{ item }}'
+  loop:
+    - 01_upde.yml
+    - 02_configfw.yml

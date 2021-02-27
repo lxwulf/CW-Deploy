@@ -1,7 +1,4 @@
----
-# tasks file for SYSTEM
-
-- name: upgrade repositorys and system of host
+- name: upgrade repositorys and system of remote
   dnf:
     name: "*"
     state: latest
@@ -12,6 +9,3 @@
     name: python-unversioned-command
     state: absent
   become: yes
-
-- name: import task
-  import_tasks: configfw.yml
