@@ -13,6 +13,10 @@
 
 <div id='introduction'/>
 
+## WARNING!
+
+> AT THE MOMENT MITOGEN PLUGIN IS DISABLED BECAUSE OF INCOMPATIBILITY I LOOK FOR THE UPDATE OF ANSIBLE 2.9 TO 2.10 WHEN I HAVE TIME
+
 ### **What's the idea of this project?** 💡
 
 Set up and configure cloud instances automatically. This is powered by the automation tool Ansible which is co-developed by Red Hat among many other free developers. CW-Deploy works only on linux and is was tested with Fedora Server (33).
