@@ -3,3 +3,18 @@
 - name: disable ipv6
   command: sysctl -w net.ipv6.conf.all.disable_ipv6=1
   become: yes
+  when: ansible_all_ipv6_addresses == [""]
+
+- name: open port 80
+  ansible.posix.firewalld:
+    service: http
+    permanent: yes
+    state: enabled
+  become: yes
+
+- name: open port 443
+  ansible.posix.firewalld:
+    service: https
+    permanent: yes
+    state: enabled
+  become: yes

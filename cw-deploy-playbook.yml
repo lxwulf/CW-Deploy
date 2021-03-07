@@ -2,7 +2,7 @@
 
 - name: Installing and configuring Cloudwulf
   hosts: dev_nxtenv2
-  strategy: mitogen_linear
+ #strategy: mitogen_linear
   roles:
   - SYSTEM
   - CW-INSTALL

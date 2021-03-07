@@ -1,0 +1,13 @@
+- name: installing apache
+  ansible.builtin.package:
+    name: httpd
+    state: latest
+  become: yes
+
+- name: installing nginx
+  ansible.builtin.package:
+    name: nginx
+    state: latest
+  become: yes
+
+#- name: downloading nextcloud

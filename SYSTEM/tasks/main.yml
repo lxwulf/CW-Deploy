@@ -7,3 +7,5 @@
   loop:
     - 01_upde.yml
     - 02_configfw.yml
+    - 03_selinux.yml
+    - 04_install_packages.yml

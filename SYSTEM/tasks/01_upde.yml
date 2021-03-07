@@ -1,11 +1,11 @@
 - name: upgrade repositorys and system of remote
-  dnf:
+  ansible.builtin.package:
     name: "*"
     state: latest
   become: yes
 
 - name: remove deprecated packages
-  dnf:
+  ansible.builtin.package:
     name: python-unversioned-command
     state: absent
   become: yes
