@@ -15,7 +15,7 @@
 
 ## WARNING!
 
-> AT THE MOMENT MITOGEN PLUGIN IS DISABLED BECAUSE OF INCOMPATIBILITY I LOOK FOR THE UPDATE OF ANSIBLE 2.9 TO 2.10 WHEN I HAVE TIME
+> AT THE MOMENT MITOGEN PLUGIN IS DISABLED BECAUSE OF INCOMPATIBILITY I UPDATED ANSIBLE TO 2.10.9 BUT I HAVE STILL PROBLEM WITH MITOGEN I WOULD TRY TO FIX THAT WHEN I HAVE TIME
 
 ### **What's the idea of this project?** 💡
 
@@ -119,7 +119,7 @@ Additionally there is a plugin folder. In this folder I put the mitogen plugin. 
 | To-Do                                    | Achieved |
 |------------------------------------------|:--------:|
 | Automatic system updates                 | ✅       |
-| Deactivate unused Services (ex. IPv6)    | ✅       |
+| Deactivate unused Services (ex. IPv6)    | (✅)     |
 | Autoremove deprecated packages           | ❌       |
 | Installing Apache                        | ❌       |
 | Installing Nginx                         | ❌       |
