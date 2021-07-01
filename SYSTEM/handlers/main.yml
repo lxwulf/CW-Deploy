@@ -1,3 +1,9 @@
 ---
 # handlers file for SYSTEM
 
+- name: start cockpit-pcp
+  ansible.builtin.service:
+    name: cockpit-pcp
+    stat: started
+
+- name: start pcp

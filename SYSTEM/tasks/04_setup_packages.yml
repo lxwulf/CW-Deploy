@@ -1,0 +1,36 @@
+---
+
+- name: installing apache
+  ansible.builtin.package:
+    name: "{{ item }}"
+    state: present
+  loop:
+    - httpd
+    - nginx
+    - vim
+    - php
+    - mariadb
+    - unzip
+    - curl
+    - wget
+    - bash-completion
+    - policycoreutils-python-utils
+    - mlocate
+    - bzip2
+    - php-pecl-mysql
+    - cockpit-pcp
+    - pcp-conf
+    - pcp-selinux
+    - pcp
+    - pcp-libs
+    - NetworkManager-tui
+  become: yes
+  notify:
+    - start cockpit-pcp
+    - start pcp-conf
+
+- name: remove deprecated packages
+  dnf:
+    name: python-unversioned-command
+    state: absent
+  become: yes

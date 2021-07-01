@@ -1,11 +1,11 @@
 ---
 
-# importing tasks
+# task list for SYSTEM role
 
 - name: import task
-  include_tasks: '{{ item }}'
+  include_tasks: "{{ item }}"
   loop:
-    - 01_upde.yml
+    - 01_update.yml
     - 02_configfw.yml
-    - 03_selinux.yml
-    - 04_install_packages.yml
+    - 03_network.yml
+    - 04_setup_packages.yml

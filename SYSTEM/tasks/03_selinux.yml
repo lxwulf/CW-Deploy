@@ -1,4 +1,0 @@
-#placeholder this needs more investigation
-
-#ausearch -c 'rngd' --raw | audit2allow -M my-rngd
-#semodule -X 300 -i my-rngd.pp

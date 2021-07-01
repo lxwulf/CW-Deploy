@@ -119,7 +119,7 @@ Additionally there is a plugin folder. In this folder I put the mitogen plugin. 
 | To-Do                                    | Achieved |
 |------------------------------------------|:--------:|
 | Automatic system updates                 | ✅       |
-| Deactivate unused Services (ex. IPv6)    | (✅)     |
+| Deactivate unused Services (ex. IPv6)    |(✅)      |
 | Autoremove deprecated packages           | ❌       |
 | Installing Apache                        | ❌       |
 | Installing Nginx                         | ❌       |

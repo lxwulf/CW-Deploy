@@ -1,6 +1,6 @@
 ---
 
-- name: Installing and configuring Cloudwulf
+- name: Setup System and Installing Cloudwulf
   hosts: dev_nxtenv2
   #strategy: mitogen_linear
   roles:
