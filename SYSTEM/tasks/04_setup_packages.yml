@@ -17,20 +17,23 @@
     - policycoreutils-python-utils
     - mlocate
     - bzip2
-    - php-pecl-mysql
+    #- php-pecl-mysql
     - cockpit-pcp
+    - cockpit-bridge
+    - cockpit-system
     - pcp-conf
     - pcp-selinux
     - pcp
     - pcp-libs
     - NetworkManager-tui
   become: yes
-  notify:
-    - start cockpit-pcp
-    - start pcp-conf
+ # notify:
+ #   - start cockpit-pcp
+ #   - start pcp-conf
 
 - name: remove deprecated packages
   dnf:
     name: python-unversioned-command
     state: absent
   become: yes
+#pmlogger.service is not running
