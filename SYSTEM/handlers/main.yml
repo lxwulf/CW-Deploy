@@ -1,7 +1,13 @@
 ---
 # handlers file for SYSTEM
 
-#- name: start cockpit-pcp
-#  ansible.builtin.service:
-#    name: cockpit-pcp
-#    stat: started
+- name: start pmlogger
+  ansible.builtin.service:
+    name: pmlogger
+    enabled: yes
+    state: started
+  become: yes
+
+- name: restart virtual machine
+  reboot:
+  become: yes

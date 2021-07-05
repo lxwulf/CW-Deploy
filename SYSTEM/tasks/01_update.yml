@@ -5,3 +5,6 @@
     name: "*"
     state: latest
   become: yes
+
+  notify:
+    - restart virtual machine
