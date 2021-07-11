@@ -8,9 +8,10 @@
 
 - name: installing packages
   ansible.builtin.package:
-    name: "{{ item }}"
+    name: "{{ packages }}"
     state: present
-  loop:
+  vars:
+    packages:
     - httpd
     - nginx
     - vim

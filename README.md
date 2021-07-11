@@ -1,40 +1,38 @@
 # CW-Deploy
 
+## Badges
 [![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/lxwulf/CW-DEPLOY)
 
 ## Table of Contents
 
 1. [Introduction](#introduction)
-1. [Structure](#structure)
-    1. [Structure Summary System Build](#summarysystembuild)
-    1. [Structure Directory Tree](#directorytree)
-        1. [Role Folders](#rolefolders)
-        1. [Variable Folders](#varsfolders)
-        1. [Miscellaneous Folders](#miscfolders)
-1. [Roadmap](#roadmap)
+1. [Structure](#structure-🏗️)
+    1. [Structure Summary System Build](#structure-summary-system-build-✍️)
+    1. [Structure Directory Tree](#structure-directory-tree-✍️)
+        1. [Role Folders](#role-folders)
+        1. [Variable Folders](#variable-folders)
+        1. [Miscellaneous Folders](#miscellaneous-folders)
+1. [Roadmap](#roadmap-🛣️)
 
-<div id='introduction'/>
+## Introduction
 
-## WARNING!
+## INFO
 
-> AT THE MOMENT MITOGEN PLUGIN IS DISABLED BECAUSE OF INCOMPATIBILITY. I UPDATED ANSIBLE TO 2.11.2 BUT MITOGEN DOESN'T SUPPORT ANSIBLE 2.11+ YET.
+> MITOGEN IS INSTALLED AS PLUGIN IN THE PLUGIN FOLDER. SO THE TASKS ARE BOOSTED IN PERSPECTIVE TO PERFORMANCE. THE USED ANSIBLE VERSION IS NOW 2.10.11.
 
-### **What's the idea of this project?** 💡
+### What's the idea of this project? 💡
 
 Set up and configure cloud instances automatically. This is powered by the automation tool Ansible which is co-developed by Red Hat among many other free developers. CW-Deploy works only on linux and is was tested with Fedora Server (33).
 
 The repository of ansible is available on GitHub --> [Ansible](https://github.com/ansible/ansible)
 
 ---
-<div id='structure'/>
 
-### **Structure** 🏗️
+### Structure 🏗️
 
 As frontend [Apache](https://apache.org/) is needed and as backend [Nginx](https://nginx.org/en/) as proxy. So we have the best performance on the dashboard and also in the backend with the data processing which Nginx does. As cloud engine we use [Nextcloud](https://nextcloud.com/) which is also free and open source.
 
-<div id='summarysystembuild'/>
-
-#### **Structure Summary System Build** ✍️
+#### Structure Summary System Build ✍️
 
 - Frontend 🖥️
   - Apache
@@ -43,9 +41,7 @@ As frontend [Apache](https://apache.org/) is needed and as backend [Nginx](https
 - Cloudengine 🌩️
   - Nextcloud
 
-<div id='directorytree'/>
-
-#### **Structure Directory Tree** ✍️
+#### Structure Directory Tree ✍️
 
 The following directories are roles folders:
 
@@ -65,9 +61,7 @@ This is also the right order in which way they are replayed. All other folders o
 
 ---
 
-<div id='rolefolders'/>
-
-#### **Role Folders**
+#### Role Folders
 
 In every role folder, they have the same folder structure, as example here I took the ``CONFIG`` folder.
 
@@ -83,9 +77,7 @@ In every role folder, they have the same folder structure, as example here I too
  ┗ 📂vars\
  ┃ ┗ 📜main.yml
 
-<div id='varsfolder'/>
-
-#### **Variable Folders**
+#### Variable Folders
 
 This are the ``var`` folders/files in every role folder.
 
@@ -101,9 +93,7 @@ This are the ``var`` folders/files in every role folder.
 
 ---
 
-<div id='miscfolders'/>
-
-#### **Miscellaneous Folders**
+#### Miscellaneous Folders
 
 Additionally there is a plugin folder. In this folder I put the mitogen plugin. You can simply download this unzip and put it in the plugin folder. In the ansible.cfg this must be defined, where the plugin is and also that this should be used.
 
@@ -114,9 +104,7 @@ Additionally there is a plugin folder. In this folder I put the mitogen plugin. 
 
 ---
 
-<div id='roadmap'/>
-
-### **Roadmap** 🛣️
+### Roadmap 🛣️
 
 | To-Do                                    | Achieved |
 |------------------------------------------|:--------:|
