@@ -1,5 +1,7 @@
 # CW-Deploy
 
+[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/lxwulf/CW-DEPLOY)
+
 ## Table of Contents
 
 1. [Introduction](#introduction)
@@ -15,7 +17,7 @@
 
 ## WARNING!
 
-> AT THE MOMENT MITOGEN PLUGIN IS DISABLED BECAUSE OF INCOMPATIBILITY I UPDATED ANSIBLE TO 2.10.9 BUT I HAVE STILL PROBLEM WITH MITOGEN I WOULD TRY TO FIX THAT WHEN I HAVE TIME
+> AT THE MOMENT MITOGEN PLUGIN IS DISABLED BECAUSE OF INCOMPATIBILITY. I UPDATED ANSIBLE TO 2.11.2 BUT MITOGEN DOESN'T SUPPORT ANSIBLE 2.11+ YET.
 
 ### **What's the idea of this project?** 💡
 

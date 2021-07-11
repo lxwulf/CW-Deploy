@@ -9,3 +9,5 @@
     state: present
     autoconnect: yes
   become: yes
+  notify:
+      - restart virtual machine
